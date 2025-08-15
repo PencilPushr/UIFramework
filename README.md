@@ -9,21 +9,21 @@ Currently only supporting DirectX 11 and Win32. OpenGL and GLFW soon!
 
 
 # Highly recommended resources
-ChiliTomatoNoodle - DirectX 11 series
-Game Engine Series by The Cherno - Renderer architecture
-jpres - Low-level graphics programming
+ChiliTomatoNoodle - DirectX 11 series  
+Game Engine Series by The Cherno - Renderer architecture  
+jpres - Low-level graphics programming  
 
 
-https://learnopengl.com/ <- This one is not a directx related but possibly the most useful one
-http://www.directxtutorial.com/Lesson.aspx?lessonid=112-1-1
-https://www.rastertek.com/dx11win10tut02.html
+https://learnopengl.com/ <- This one is not a directx related but possibly the most useful one  
+http://www.directxtutorial.com/Lesson.aspx?lessonid=112-1-1  
+https://www.rastertek.com/dx11win10tut02.html  
 
 # Features
 
-Cross-platform abstraction: Clean separation between platform layer and rendering
-DirectX 11 backend: Hardware-accelerated 2D primitive rendering
-Simple API: Easy-to-use drawing functions for basic shapes
-Real-time rendering: Immediate mode rendering with dynamic vertex buffers
+Cross-platform abstraction: Clean separation between platform layer and rendering  
+DirectX 11 backend: Hardware-accelerated 2D primitive rendering  
+Simple API: Easy-to-use drawing functions for basic shapes  
+Real-time rendering: Immediate mode rendering with dynamic vertex buffers  
 
 # Supported Primitives
 
@@ -33,6 +33,7 @@ Rectangles
 Circles (with configurable segments)
 
 # Project Structure
+```
 ├── backend/
 │   ├── DX11Renderer.h/cpp          # DirectX 11 device management
 │   └── DX11PrimitiveRenderer.h/cpp # Primitive rendering implementation
@@ -44,7 +45,7 @@ Circles (with configurable segments)
 ├── Colour.h                        # Color structure
 ├── Gui.h/cpp                       # Main application class
 └── main.cpp                        # Entry point
-
+```
 # Usage example:
 ```cpp
 #include "UIRenderer.h"
@@ -108,3 +109,4 @@ Currently it also only supports:
 3. Transform pixel coordinates to normalized device coordinates (NDC)
 4. Draw primitives using immediate mode batching
 5. Present the frame
+
