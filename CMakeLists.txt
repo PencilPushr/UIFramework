@@ -17,7 +17,7 @@ file (GLOB_RECURSE SRC_FILES
 )
 
 # Add source to this project's executable.
-add_executable (${PROJECT_NAME} "main.cpp" ${SRC_FILES} "src/core/backend/OpenGLRenderer.h")
+add_executable (${PROJECT_NAME} "main.cpp" ${SRC_FILES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core"

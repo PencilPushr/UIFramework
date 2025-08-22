@@ -88,22 +88,22 @@ void GUI::Run()
 		switch (mCurState)
 		{
 
-		case STATE::VALID:
-		{
-			// Clear screen (with an alpha of 0 for transparency, if needed)
-			DX11::ClearScreen(0.7f, 1.f, 1.f, 1.0f);
+			case STATE::VALID:
+			{
+				// Clear screen (with an alpha of 0 for transparency, if needed)
+				DX11::ClearScreen(0.7f, 1.f, 1.f, 1.0f);
 
-			// Render main items
-			Render();
+				// Render main items
+				Render();
 
-			// Render your content/primitives
-			DX11::Render();
-		} break;
+				// Render your content/primitives
+				DX11::Render();
+			} break;
 
-		case STATE::ERR:
-		default:
-			mRun = false;
-			break;
+			case STATE::ERR:
+			default:
+				mRun = false;
+				break;
 		}
 	}
 }
