@@ -27,10 +27,10 @@ Real-time rendering: Immediate mode rendering with dynamic vertex buffers
 
 # Supported Primitives
 
-Lines
-Triangles
-Rectangles
-Circles (with configurable segments)
+Lines  
+Triangles  
+Rectangles  
+Circles (with configurable segments)  
 
 # Project Structure
 ```
@@ -109,4 +109,5 @@ Currently it also only supports:
 3. Transform pixel coordinates to normalized device coordinates (NDC)
 4. Draw primitives using immediate mode batching
 5. Present the frame
+
 
