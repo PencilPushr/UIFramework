@@ -64,8 +64,10 @@ bool PlatformWin32::Init(const wchar_t* title, int x, int y, int w, int h)
         return false;
     }
 
-    return ShowWindow(Window, SW_SHOWDEFAULT);
-    // Don't call UpdateWindow as we don't have another handle/instance
+    ShowWindow(Window, SW_SHOWDEFAULT);
+    UpdateWindow(Window);
+
+    return true;
 }
 
 void PlatformWin32::Shutdown()

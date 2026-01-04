@@ -6,7 +6,7 @@ GUI::GUI()
 	mCurState = STATE::VALID;
 	mRun = true;
 
-	if (mWindow.Init(L"GUI", 300, 300, 600, 600))
+	if (!mWindow.Init(L"GUI", 300, 300, 600, 600))
 	{
 		fprintf(stderr, "Window failed to initialise\n");
 		mCurState = STATE::ERR;
