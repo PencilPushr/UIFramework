@@ -5,6 +5,11 @@
 Currently only supporting DirectX 11 and Win32. OpenGL and GLFW soon!
 
 ## In action:
+
+### Version 1.4!
+<img width="1904" height="940" alt="image" src="https://github.com/user-attachments/assets/0ecb7b3e-6ecb-4887-b855-d5159f477caa" />
+
+### Basic rendering showcase
 <img width="604" height="604" alt="image" src="https://github.com/user-attachments/assets/0d193fde-921d-4da5-b5d9-7c7eeebbe04e" />
 
 
@@ -109,5 +114,6 @@ Currently it also only supports:
 3. Transform pixel coordinates to normalized device coordinates (NDC)
 4. Draw primitives using immediate mode batching
 5. Present the frame
+
 
 
