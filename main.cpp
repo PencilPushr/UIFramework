@@ -1,9 +1,6 @@
-﻿#include "src/Gui.h"
+﻿#include <iostream>
 
 int main()
 {
-	GUI menu;
-	menu.Run();
-	return 0;
-
+	std::cout << "Hello world!\n";
 }

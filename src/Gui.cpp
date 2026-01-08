@@ -1,5 +1,5 @@
 #include "Gui.h"
-
+/*
 static GUI* g_guiInstance = nullptr;
 
 // Static callback function - unfortunately this is required, as static methods cannot access private members
@@ -107,3 +107,4 @@ void GUI::Run()
 		}
 	}
 }
+*/

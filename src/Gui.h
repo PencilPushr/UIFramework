@@ -1,10 +1,5 @@
 #pragma once
-
-#include "backend/DX11Renderer.h"
-#include "platform/PlatformWin32.h"
-#include "base/DX11PrimitiveRenderer.h"
-#include "UIRenderer.h"
-
+/*
 enum class STATE
 {
 	VALID = 0,
@@ -30,3 +25,4 @@ private:
 	int mWindowWidth;
 	int	mWindowHeight;
 };
+*/
