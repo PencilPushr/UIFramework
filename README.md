@@ -1,8 +1,12 @@
 ﻿# UIFramework
 
-2D primitive rendering framework, designed for cross-compatability by writing backend components via "renderers and platforms". This projectis meant for easy prototyping of 2D applications.
+2D primitive rendering framework, designed for cross-compatability by writing backend components via "renderers and platforms". This project is meant for easy prototyping of 2D applications.
 
 Currently only supporting DirectX 11 and Win32. OpenGL and GLFW soon!
+
+08/01/2026:
+This is currently undergoing a massive overhaul.
+Due to reasons found under "**Features**" this needs to be built from the ground up again.
 
 ## In action:
 
@@ -25,10 +29,18 @@ https://www.rastertek.com/dx11win10tut02.html
 
 # Features
 
-Cross-platform abstraction: Clean separation between platform layer and rendering  
-DirectX 11 backend: Hardware-accelerated 2D primitive rendering  
-Simple API: Easy-to-use drawing functions for basic shapes  
-Real-time rendering: Immediate mode rendering with dynamic vertex buffers  
+~~Cross-platform abstraction: Clean separation between platform layer and rendering~~
+~~Renderer backends: Hardware-accelerated 2D primitive rendering~~ 
+~~Simple API: Easy-to-use drawing functions for basic shapes~~  
+~~Real-time rendering: Immediate mode rendering with dynamic vertex buffers~~  
+
+08/01/2026:
+This has undergone massive design changes. The initial setup was fundamentally flawed and meant writing components was a little less inuitive than desired.
+Having spent time developing UI behind the scenes for the past couple of months, the realisation has dawned on me that this needs a massive overhaul.
+Components and setup that I breezed through by tutorials and copying and pasting has resulted in poor foundations. 
+
+Some of the code that was written I did not fundamentally understand, when this project eventually supports VULKAN and DX12, a deeper understanding will be needed,
+in lieu of this; a much needed overhaul is due.
 
 # Supported Primitives
 
