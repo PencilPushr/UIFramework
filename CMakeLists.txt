@@ -7,7 +7,7 @@ project ("UIFramework")
 
 # Set C++20
 set(CMAKE_CXX_STANDARD 20)
-
+    
 
 # Enable Hot Reload for MSVC compilers if supported.
 if(POLICY CMP0141)
@@ -26,7 +26,7 @@ file (GLOB_RECURSE SRC_FILES
 
 # Add source to this project's executable.
 # add_executable (${PROJECT_NAME} "main.cpp" ${SRC_FILES})
-add_executable (${PROJECT_NAME} "main.cpp")
+add_executable (${PROJECT_NAME} "main.cpp" "src/ui/ImGui.h" "src/ui/ImGui.cpp")
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core"
